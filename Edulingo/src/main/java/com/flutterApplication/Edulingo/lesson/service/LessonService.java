@@ -43,4 +43,8 @@ public class LessonService {
     public void deleteLesson(String id) {
         lessonRepository.deleteById(id);
     }
+
+    public List<Question> getAllQuestion(){
+        return questionRepository.findAll();
+    }
 }
