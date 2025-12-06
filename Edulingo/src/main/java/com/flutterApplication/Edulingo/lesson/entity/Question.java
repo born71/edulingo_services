@@ -18,8 +18,15 @@ public class Question {
     @Column(length = 36)
     private String id;
 
-    @Column(name = "lesson_id", nullable = false, length = 36)
-    private String lessonId;   // simplify: เก็บเป็น String, ไม่ผูก @ManyToOne ก่อน
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "lesson_id", nullable = false)
+    @com.fasterxml.jackson.annotation.JsonBackReference
+    private Lesson lesson;
+
+    @com.fasterxml.jackson.annotation.JsonProperty("lessonId")
+    public String getLessonId() {
+        return lesson != null ? lesson.getId() : null;
+    }
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String question;

@@ -49,7 +49,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q1 = new Question();
         q1.setId("greeting_1");
-        q1.setLessonId(lesson.getId());
+        q1.setLesson(lesson);
         q1.setOrderIndex(1);
         q1.setQuestion("Select the Spanish word for \"Hello\"");
         q1.setCorrectAnswer("Hola");
@@ -60,7 +60,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q2 = new Question();
         q2.setId("greeting_2");
-        q2.setLessonId(lesson.getId());
+        q2.setLesson(lesson);
         q2.setOrderIndex(2);
         q2.setQuestion("How do you say \"Thank you\" in French?");
         q2.setCorrectAnswer("Merci");
@@ -71,7 +71,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q3 = new Question();
         q3.setId("greeting_3");
-        q3.setLessonId(lesson.getId());
+        q3.setLesson(lesson);
         q3.setOrderIndex(3);
         q3.setQuestion("What is the German word for \"Water\"?");
         q3.setCorrectAnswer("Wasser");
@@ -82,7 +82,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q4 = new Question();
         q4.setId("greeting_4");
-        q4.setLessonId(lesson.getId());
+        q4.setLesson(lesson);
         q4.setOrderIndex(4);
         q4.setQuestion("How do you say \"Good morning\" in Spanish?");
         q4.setCorrectAnswer("Buenos días");
@@ -93,7 +93,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q5 = new Question();
         q5.setId("greeting_5");
-        q5.setLessonId(lesson.getId());
+        q5.setLesson(lesson);
         q5.setOrderIndex(5);
         q5.setQuestion("What does \"Au revoir\" mean in French?");
         q5.setCorrectAnswer("Goodbye");
@@ -119,7 +119,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q1 = new Question();
         q1.setId("number_1");
-        q1.setLessonId(lesson.getId());
+        q1.setLesson(lesson);
         q1.setOrderIndex(1);
         q1.setQuestion("How do you say \"One\" in Spanish?");
         q1.setCorrectAnswer("Uno");
@@ -130,7 +130,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q2 = new Question();
         q2.setId("number_2");
-        q2.setLessonId(lesson.getId());
+        q2.setLesson(lesson);
         q2.setOrderIndex(2);
         q2.setQuestion("What is \"Five\" in Spanish?");
         q2.setCorrectAnswer("Cinco");
@@ -141,7 +141,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q3 = new Question();
         q3.setId("number_3");
-        q3.setLessonId(lesson.getId());
+        q3.setLesson(lesson);
         q3.setOrderIndex(3);
         q3.setQuestion("How do you say \"Ten\" in Spanish?");
         q3.setCorrectAnswer("Diez");
@@ -152,7 +152,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q4 = new Question();
         q4.setId("number_4");
-        q4.setLessonId(lesson.getId());
+        q4.setLesson(lesson);
         q4.setOrderIndex(4);
         q4.setQuestion("What number is \"Siete\"?");
         q4.setCorrectAnswer("Seven");
@@ -163,7 +163,7 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         Question q5 = new Question();
         q5.setId("number_5");
-        q5.setLessonId(lesson.getId());
+        q5.setLesson(lesson);
         q5.setOrderIndex(5);
         q5.setQuestion("Which number comes after \"Tres\"?");
         q5.setCorrectAnswer("Cuatro");
